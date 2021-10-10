@@ -3,19 +3,23 @@ from selenium.common.exceptions import TimeoutException, ElementNotInteractableE
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
+import logging
+import time
 
 
 class BasePage:
     def __init__(self, browser):
         self.browser = browser
+        self.logger = logging.getLogger(type(self).__name__)
 
     def find_element_with_wait(self, locator, selector, timeout=5):
         # кастомный поиск элемента с ожидаением по существованию элемента
-
+        self.logger.debug(f"{str(time.localtime())}Поиск элемента с селектором {selector}")
         try:
             element = WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((locator, selector)))
         except TimeoutException:
             raise AssertionError("Не найден элемент с селектором: {}".format(selector))
+        self.logger.debug(f"Найден элемент с селектором {selector}")
         return element
 
     def find_element_with_wait_clickable(self, locator, selector, timeout=5):

@@ -8,7 +8,7 @@ from page_objects.browser_alert import BrowserAlert
 from page_objects.customer_section.elements.upper_user_panel import UpperUserPanel, Currencies
 from page_objects.customer_section.pages.home_page import HomePage
 from page_objects.customer_section.pages.register_page import RegisterPage
-
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
 
 
 def test_add_new_product(browser, url):

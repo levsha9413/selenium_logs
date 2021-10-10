@@ -4,9 +4,10 @@ import os
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
+import logging
 
 DRIVERS = os.path.expanduser("~/qa/drivers")
-
+logging.basicConfig(format='%(asctime)s - %(name)s - %(message)s', level=logging.DEBUG, filename="../logs/selenium.log")
 
 def pytest_addoption(parser):
     parser.addoption("--maximized", action="store_true", help="Maximize browser windows")
@@ -30,12 +31,15 @@ def browser(request):
     if _browser == "chrome":
         options = webdriver.ChromeOptions()
         options.add_argument("--start-maximized")
-        driver = webdriver.Chrome(executable_path=f"{DRIVERS}/chromedriver", chrome_options=options)  # создаем экземпляр драйвера, для этого нужно либо указать путь до драйвера, либо добавить в PATH
+        options.add_experimental_option('w3c', False)
+        driver = webdriver.Chrome(executable_path=f"{DRIVERS}/chromedriver",
+                                  chrome_options=options,
+                                  service_log_path='../logs/driver.log')
     elif _browser == "opera":
         driver = webdriver.Opera(executable_path=f"{DRIVERS}/operadriver")
     elif _browser == "firefox":
         driver = webdriver.Firefox(
-            executable_path=f"{DRIVERS}/geckodriver")  # без ecutebel_path= chrome запускается, но firefox и opera - нет
+            executable_path=f"{DRIVERS}/geckodriver")  # без executebel_path= chrome запускается, но firefox и opera - нет
 
     def final():  # добавляем финалайзер, чтобы браузер закрывался после теста (chrome сам закрывается, отсальные - нет)
         driver.quit()
