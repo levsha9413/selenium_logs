@@ -16,16 +16,21 @@ BUTTON_CART = (By.XPATH, '''//div[@id="cart"]/button''')
 class HomePage(BasePage):
 
     def open_page(self, _url):
+        self.logger.info(f"Перейти на домашнюю страницу: {_url + POSTFIX_URL}")
         self.browser.get(_url + POSTFIX_URL)
 
     def verification_big_swiper(self):
+        self.logger.info("Проверка наличия большого свайпера")
         self.find_element_with_wait(*BIG_SWIPER)
 
     def verification_menu_bar(self):
+        self.logger.info("Проверка панели меню")
         self.find_element_with_wait(*MENU_BAR)
 
     def verification_product_bar(self):
+        self.logger.info("Проверка наличия меню товаров")
         self.find_element_with_wait(*PRODUCT_BAR)
 
     def verification_footer(self):
+        self.logger.info("Проверка наличия футера")
         self.find_element_with_wait(*FOOTER)

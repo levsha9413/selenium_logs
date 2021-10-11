@@ -17,33 +17,42 @@ SUCCESSFUL_TITLE = (By.XPATH, '//h1[text()="Your Account Has Been Created!"]')
 class RegisterPage(BasePage):
 
     def enter_first_name(self, first_name: str = 'Joe'):
+        self.logger.info(f"Ввести имя - {first_name}")
         self.enter_input(*FIRST_NAME_INPUT, first_name)
 
     def enter_last_name(self, last_name: str = 'Smith'):
+        self.logger.info(f"Ввести фамилию - {last_name}")
         self.enter_input(*LAST_NAME_INPUT, last_name)
 
     def enter_email(self, email: str = 'ed.d.xample@mail.com'):
+        self.logger.info(f"Ввести email - {email}")
         self.enter_input(*EMAIL_INPUT, email)
 
     def enter_telephone(self, phone_number: str = '+12121234567'):
+        self.logger.info(f"Ввести телефон - {phone_number}")
         self.enter_input(*TELEPHONE_INPUT, phone_number)
 
     def enter_password(self, password: str = 'ghf54fdgLL'):
+        self.logger.info(f"Ввести пароль - {password}")
         self.enter_input(*PASSWORD_INPUT, password)
 
     def enter_password_confirm(self, password: str = 'ghf54fdgLL'):
+        self.logger.info(f"Подтвердить пароль - {password}")
         self.enter_input(*PASSWORD_CONFIRM_INPUT, password)
 
     def subscribe_newsletter(self, param: bool = True):
+        self.logger.info(f"Подписаться на рассылку - {str(param)}")
         if param:
             self.click_button(*SUBSCRIBE_RADIOBUTTON_YES)
         else:
             self.click_button(*SUBSCRIBE_RADIOBUTTON_NO)
 
     def click_privacy_policy_checkbox(self):
+        self.logger.info("Принять политику конфиденциальности")
         self.click_button(*PRIVACY_POLICY_CHECKBOX)
 
     def click_continue(self):
+        self.logger.info("Продолжить")
         self.click_button(*CONTINUE_BUTTON)
 
     def enter_all_user_fields(self):
@@ -58,5 +67,6 @@ class RegisterPage(BasePage):
         self.enter_password_confirm()
 
     def check_successfully_created(self) -> bool:
+        self.logger.info("Проверка успешного окончания регистрации")
         self.find_element_with_wait(*SUCCESSFUL_TITLE)
         return True

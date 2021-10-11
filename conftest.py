@@ -7,13 +7,25 @@ from selenium.webdriver.support.wait import WebDriverWait
 import logging
 
 DRIVERS = os.path.expanduser("~/qa/drivers")
-logging.basicConfig(format='%(asctime)s - %(name)s - %(message)s', level=logging.DEBUG, filename="../logs/selenium.log")
+logging.basicConfig(format='%(asctime)s [%(levelname)s] %(name)s: %(message)s', level=logging.DEBUG,
+                    filename="../logs/selenium.log")
+
 
 def pytest_addoption(parser):
     parser.addoption("--maximized", action="store_true", help="Maximize browser windows")
     parser.addoption("--headless", action="store_true", help="Run headless")  # headless режим нужен для разработчика
     parser.addoption("--browser", default="chrome", choices=["chrome", "firefox", "opera"])
     parser.addoption("--url", default="https://demo.opencart.com/")
+    parser.addoption("--log_level", default="INFO", choices=["DEBUG", "INFO"])
+
+
+@pytest.fixture
+def log_level(request):
+    level = request.config.getoption("--log_level")
+    if level == "INFO":
+        return logging.INFO
+    elif level == "DEBUG":
+        return logging.DEBUG
 
 
 @pytest.fixture  # делаем для url отдельную фикстуру, чтобы передавать как отдельный аргумент

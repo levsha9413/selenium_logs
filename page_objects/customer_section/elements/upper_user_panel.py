@@ -25,11 +25,13 @@ class Currencies(enum.Enum):
 class UpperUserPanel(BasePage):
 
     def switch_currency(self, currency: Currencies):
+        self.logger.info(f'Переключить валюту на {currency.name}')
         self.click_button(*SWITCH_CURRENCY_BUTTON)
         selector = currency.value
         self.click_button(*selector)
 
     def check_current_currency(self, currency: Currencies):
+        self.logger.info(f'Проверить, что текущая валюта {currency.name}')
         selector = None
         if currency.value == Currencies.USD.value:
             selector = USD_SYMBOL
@@ -40,24 +42,31 @@ class UpperUserPanel(BasePage):
         self.find_element_with_wait(*selector)
 
     def go_to_contact(self):
+        self.logger.info('Перейти к контактам')
         self.click_button(*CONTACT_BUTTON)
 
     def go_to_my_account(self):
+        self.logger.info('Перейти к профилю покупателя')
         self.click_button(*MY_ACCOUNT_BUTTON)
 
     def go_to_wish_list(self):
+        self.logger.info('Перейти в избранное')
         self.click_button(*WISH_LIST_BUTTON)
 
     def go_to_shopping_cart(self):
+        self.logger.info('Перейти в корзину')
         self.click_button(*SHOPPING_CART_BUTTON)
 
     def checkout(self):
+        self.logger.info('Перейти к заказу')
         self.click_button(*CHECKOUT_BUTTON)
 
     def go_to_register(self):
+        self.logger.info('Перейти к регистрации')
         self.go_to_my_account()
         self.click_button(*REGISTER)
 
     def go_to_login(self):
+        self.logger.info('Войти')
         self.go_to_my_account()
         self.click_button(*LOGIN)

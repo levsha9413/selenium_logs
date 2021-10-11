@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from page_objects.base_page import BasePage
+
 POSTFIX_URL = '/admin'
 
 USERNAME_INPUT = (By.ID, "input-username")
@@ -14,15 +15,19 @@ FORGOTTEN_PASSWORD_LINK = (
 class LoginPage(BasePage):
 
     def open_page(self, _url):
+        self.logger.info(f"Перейти на страницу авторизации: {_url + POSTFIX_URL}")
         self.browser.get(_url + POSTFIX_URL)
 
     def entering_login(self, login):
+        self.logger.info(f"Ввести логин {login}")
         self.enter_input(*USERNAME_INPUT, login)
 
     def entering_password(self, password):
+        self.logger.info(f"Ввести пароль {password}")
         self.enter_input(*PASSWORD_INPUT, password)
 
     def login_button_click(self):
+        self.logger.info(f"Авторизоваться")
         self.click_button(*LOGIN_BUTTON)
 
     def sign_in(self, login, password):
@@ -34,5 +39,6 @@ class LoginPage(BasePage):
         self.login_button_click()
 
     def forgotten_password_link_click(self):
+        self.logger.info(f"Восстановить пароль")
         link = self.find_element_with_wait(*FORGOTTEN_PASSWORD_LINK)
         link.click()

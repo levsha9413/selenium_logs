@@ -7,5 +7,6 @@ class BrowserAlert(BasePage):
     '''
 
     def accept_alert(self):
+        self.logger.info('Принять аллерт браузера')
         alert = self.browser.switch_to.alert
         alert.accept()

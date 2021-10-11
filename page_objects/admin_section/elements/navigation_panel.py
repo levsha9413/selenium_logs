@@ -17,9 +17,11 @@ class Sections(enum.Enum):
 
 class NavigationPanel(BasePage):
     def open_section(self, selector: Sections):
+        self.logger.info(f"Открыть раздел меню {selector.name}")
         section_selector = selector.value
         self.click_button(*section_selector)
 
     def open_subsection(self, selector: Sections):
+        self.logger.info(f"Открыть подраздел {selector.name}")
         section_selector = selector.value
         self.click_button(*section_selector)
