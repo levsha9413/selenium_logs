@@ -20,27 +20,27 @@ class AddProductPageGeneral(BasePage):
         self.click_button(*GENERAL_TAB)
 
     def enter_product_name(self, product_name: str = 'Test product name'):
-        self.logger.info(f'Ввести имя продукта - {product_name}')
+        self.logger.info(f'Ввести имя продукта - "{product_name}"')
         self.enter_input(*INPUT_PRODUCT_NAME, product_name)
 
     def enter_description(self, description: str = 'Test description 123!@#$%^'):
-        self.logger.info(f'Ввести описание продукта - {description}')
+        self.logger.info(f'Ввести описание продукта - "{description}"')
         self.enter_input(*INPUT_DESCRIPTION, description)
 
     def enter_meta_teg_title(self, teg: str = "Test_meta_teg"):
-        self.logger.info(f'Ввести тег заголовка - {teg}')
+        self.logger.info(f'Ввести тег заголовка - "{teg}"')
         self.enter_input(*INPUT_META_TEG_TITLE, teg)
 
     def enter_meta_teg_descriptions(self, meta_teg_descriptions: str = "Test meta teg descriptions"):
-        self.logger.info(f'Ввести мета тег - {meta_teg_descriptions}')
+        self.logger.info(f'Ввести мета тег - "{meta_teg_descriptions}"')
         self.enter_input(*INPUT_META_TEG_DESCRIPTION, meta_teg_descriptions)
 
     def enter_meta_teg_keywords(self, keywords: str = "Test keywords"):
-        self.logger.info(f'Ввести ключевые слова - {keywords}')
+        self.logger.info(f'Ввести ключевые слова - "{keywords}"')
         self.enter_input(*INPUT_META_TEG_KEYWORDS, keywords)
 
     def enter_product_teg(self, product_tag: str = "Test product tag"):
-        self.logger.info(f'Ввести тег - {product_tag}')
+        self.logger.info(f'Ввести тег - "{product_tag}"')
         self.enter_input(*INPUT_PRODUCT_TEG, product_tag)
 
     def enter_all_fields(self):

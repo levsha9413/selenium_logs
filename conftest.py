@@ -17,9 +17,10 @@ def pytest_addoption(parser):
     parser.addoption("--browser", default="chrome", choices=["chrome", "firefox", "opera"])
     parser.addoption("--url", default="https://demo.opencart.com/")
     parser.addoption("--log_level", default="INFO", choices=["DEBUG", "INFO"])
+    parser.addoption("--executor", action="store", default="127.0.0.1")  # указываем хост для удаленного запуска
 
 
-@pytest.fixture
+@pytest.fixture  # выпилить если не смогу пробросить
 def log_level(request):
     level = request.config.getoption("--log_level")
     if level == "INFO":
@@ -39,11 +40,12 @@ def browser(request):
     _browser = request.config.getoption("--browser")  # _ добавляем для отличия от имени фикстуры
     headless = request.config.getoption("--headless")
     maximized = request.config.getoption("--maximized")
+    executor = request.config.getoption("--executor")
 
     if _browser == "chrome":
         options = webdriver.ChromeOptions()
         options.add_argument("--start-maximized")
-        options.add_experimental_option('w3c', False)
+        options.add_experimental_option('w3c', False)  # магическая опция
         driver = webdriver.Chrome(executable_path=f"{DRIVERS}/chromedriver",
                                   chrome_options=options,
                                   service_log_path='../logs/driver.log')
@@ -51,19 +53,15 @@ def browser(request):
         driver = webdriver.Opera(executable_path=f"{DRIVERS}/operadriver")
     elif _browser == "firefox":
         driver = webdriver.Firefox(
-            executable_path=f"{DRIVERS}/geckodriver")  # без executebel_path= chrome запускается, но firefox и opera - нет
+            executable_path=f"{DRIVERS}/geckodriver")
 
-    def final():  # добавляем финалайзер, чтобы браузер закрывался после теста (chrome сам закрывается, отсальные - нет)
+    driver = webdriver.Remote(command_executor=f"http://{executor}:4444/wd/hub",
+                              desired_capabilities={"browserName": _browser})
+    driver.maximize_window()
+
+    def final():
         driver.quit()
 
     request.addfinalizer(final)
 
     return driver  # return ставим после финалайзера, иначе финалайзер не выполнится
-
-
-def find_element_with_wait(locator, selector, driver, timeout=5):
-    # кастомный поиск элемента с ожидаением по существованию элемента
-    try:
-        WebDriverWait(driver, timeout).until(EC.presence_of_element_located((locator, selector)))
-    except TimeoutException:
-        raise AssertionError("Не найден элемент с селектором: {}".format(selector))
