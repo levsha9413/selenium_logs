@@ -12,11 +12,11 @@ def pytest_addoption(parser):
     parser.addoption("--maximized", action="store_true", help="Maximize browser windows")
     parser.addoption("--headless", action="store_true", help="Run headless")  # headless режим нужен для разработчика
     parser.addoption("--browser", default="chrome", choices=["chrome", "firefox", "opera"])
-    parser.addoption("--browser_version", action="store", default="92.0")  # version занята стандартным параметром
+    parser.addoption("--browser_version", action="store", default="93.0")  # version занята стандартным параметром
     parser.addoption("--url", default="https://demo.opencart.com/")
     parser.addoption("--log_level", default="INFO", choices=["DEBUG", "INFO"])
     parser.addoption("--executor", action="store", default="0.0.0.0",
-                     choices=["local", "127.0.0.1"])  # указываем хост для удаленного запуска
+                     choices=["local", "127.0.0.1", "0.0.0.0"])  # указываем хост для удаленного запуска
     parser.addoption("--vnc", action="store_true", default=False)
     parser.addoption("--logs", action="store_true", default=False)
     parser.addoption("--videos", action="store_true", default=False)
@@ -73,6 +73,8 @@ def browser(request):
                                           "enableVideo": videos,
                                           "sessionTimeout": "60s"  # на случай отладки
                                       }})
+        if maximized:
+            driver.maximize_window()
 
     def final():
         driver.quit()
