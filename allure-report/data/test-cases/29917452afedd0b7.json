@@ -1,0 +1,115 @@
+{
+  "uid" : "29917452afedd0b7",
+  "name" : "test_switching_currency",
+  "fullName" : "tests.test_opencart#test_switching_currency",
+  "historyId" : "f09c90ac5093d373aa7c4e4bc3490e00",
+  "time" : {
+    "start" : 1634364589885,
+    "stop" : 1634364644461,
+    "duration" : 54576
+  },
+  "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
+  "descriptionHtml" : "<pre><code>Переключение валют из верхнего меню опенкарта.\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1634364583281,
+      "stop" : 1634364589833,
+      "duration" : 6552
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "url",
+    "time" : {
+      "start" : 1634364589834,
+      "stop" : 1634364589834,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fe66003a20d20d3e",
+      "name" : "log",
+      "source" : "fe66003a20d20d3e.txt",
+      "type" : "text/plain",
+      "size" : 733
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::final",
+    "time" : {
+      "start" : 1634364644494,
+      "stop" : 1634364644587,
+      "duration" : 93
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_opencart"
+  }, {
+    "name" : "host",
+    "value" : "pavel-Aspire-V3-571G"
+  }, {
+    "name" : "thread",
+    "value" : "446154-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_opencart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29917452afedd0b7.json",
+  "parameterValues" : [ ]
+}

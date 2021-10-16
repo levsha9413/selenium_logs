@@ -1,0 +1,65 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_opencart",
+      "children" : [ {
+        "name" : "test_add_new_product",
+        "uid" : "7195f48649c68d26",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634364826881,
+          "stop" : 1634364870103,
+          "duration" : 43222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_switching_currency",
+        "uid" : "ccb7eb11798a0cc1",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634364826897,
+          "stop" : 1634364859639,
+          "duration" : 32742
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_product",
+        "uid" : "90f9f598d15057b5",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634364826913,
+          "stop" : 1634364858045,
+          "duration" : 31132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_customer_registration",
+        "uid" : "2c87b5f3483992be",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634364826990,
+          "stop" : 1634364863441,
+          "duration" : 36451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f14be6a6783e3d9195b898453a871fb"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
+  "name" : "suites"
+}

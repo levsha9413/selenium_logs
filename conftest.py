@@ -78,7 +78,11 @@ def browser(request):
 
     def final():
         driver.quit()
-
+        with open('allure-results/environment.properties', 'w') as f:
+            f.write(f'Browser={browser}\n')
+            f.write(f'Browser.Version={version}\n')
+            f.write(f'Executor={executor}')
     request.addfinalizer(final)
 
     return driver  # return ставим после финалайзера, иначе финалайзер не выполнится
+

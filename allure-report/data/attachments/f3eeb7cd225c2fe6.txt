@@ -1,0 +1,2 @@
+INFO     HomePage:home_page.py:19 Перейти на домашнюю страницу: http://192.168.1.123:8081/
+INFO     UpperUserPanel:upper_user_panel.py:28 Переключить валюту на USD
