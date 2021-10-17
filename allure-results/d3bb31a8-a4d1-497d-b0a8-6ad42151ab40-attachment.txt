@@ -1,4 +1,0 @@
-INFO     LoginPage:login_page.py:18 Перейти на страницу авторизации: http://192.168.1.123:8081//admin
-INFO     LoginPage:login_page.py:22 Ввести логин user
-INFO     LoginPage:login_page.py:26 Ввести пароль bitnami
-INFO     LoginPage:login_page.py:30 Авторизоваться

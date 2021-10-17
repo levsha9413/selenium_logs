@@ -1,13 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Oct 16 11:13:46 YEKT 2021","Sat Oct 16 11:14:30 YEKT 2021","43222","tests","test_opencart","","","","test_add_new_product","
+"passed","Sun Oct 17 23:48:24 YEKT 2021","Sun Oct 17 23:48:39 YEKT 2021","14437","tests","test_opencart","","","","test_add_new_product","
     Добавление нового товара в разделе администратора.
-    "
-"passed","Sat Oct 16 11:13:46 YEKT 2021","Sat Oct 16 11:14:19 YEKT 2021","32742","tests","test_opencart","","","","test_switching_currency","
-    Переключение валют из верхнего меню опенкарта.
-    "
-"failed","Sat Oct 16 11:13:46 YEKT 2021","Sat Oct 16 11:14:23 YEKT 2021","36451","tests","test_opencart","","","","test_new_customer_registration","
-    Регистрация нового пользователя в магазине опенкарта.
-    "
-"failed","Sat Oct 16 11:13:46 YEKT 2021","Sat Oct 16 11:14:18 YEKT 2021","31132","tests","test_opencart","","","","test_delete_product","
-    Удаление товара из списка в разделе администартора.
     "

@@ -1,12 +1,12 @@
 {
-  "uid" : "7195f48649c68d26",
+  "uid" : "eab3d36f4a4eb47d",
   "name" : "test_add_new_product",
   "fullName" : "tests.test_opencart#test_add_new_product",
   "historyId" : "b55c021cdeafe72ecf7a79f0791093ee",
   "time" : {
-    "start" : 1634364826881,
-    "stop" : 1634364870103,
-    "duration" : 43222
+    "start" : 1634496504687,
+    "stop" : 1634496519124,
+    "duration" : 14437
   },
   "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
   "descriptionHtml" : "<pre><code>Добавление нового товара в разделе администратора.\n</code></pre>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1634364819529,
-      "stop" : 1634364826856,
-      "duration" : 7327
+      "start" : 1634496503078,
+      "stop" : 1634496504683,
+      "duration" : 1605
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +31,8 @@
   }, {
     "name" : "url",
     "time" : {
-      "start" : 1634364826857,
-      "stop" : 1634364826858,
+      "start" : 1634496504683,
+      "stop" : 1634496504684,
       "duration" : 1
     },
     "status" : "passed",
@@ -49,9 +49,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "385eae78061b3b72",
+      "uid" : "c9ab06b7e003dc04",
       "name" : "log",
-      "source" : "385eae78061b3b72.txt",
+      "source" : "c9ab06b7e003dc04.txt",
       "type" : "text/plain",
       "size" : 1959
     } ],
@@ -64,9 +64,9 @@
   "afterStages" : [ {
     "name" : "browser::final",
     "time" : {
-      "start" : 1634364870106,
-      "stop" : 1634364870164,
-      "duration" : 58
+      "start" : 1634496519128,
+      "stop" : 1634496519194,
+      "duration" : 66
     },
     "status" : "passed",
     "steps" : [ ],
@@ -85,10 +85,10 @@
     "value" : "test_opencart"
   }, {
     "name" : "host",
-    "value" : "pavel-Aspire-V3-571G"
+    "value" : "pbochkarev-workmashine"
   }, {
     "name" : "thread",
-    "value" : "449192-MainThread"
+    "value" : "30790-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -108,24 +108,7 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "cb808d8cf456f918",
-      "status" : "passed",
-      "time" : {
-        "start" : 1634364589999,
-        "stop" : 1634364654437,
-        "duration" : 64438
-      }
-    }, {
-      "uid" : "3af99b6031ea9c40",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Session timed out or not found",
-      "time" : {
-        "start" : 1634364192610,
-        "stop" : 1634364352851,
-        "duration" : 160241
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ {
       "name" : "Passed tests",
       "matchedStatuses" : [ "passed" ],
@@ -133,6 +116,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "7195f48649c68d26.json",
+  "source" : "eab3d36f4a4eb47d.json",
   "parameterValues" : [ ]
 }

@@ -16,7 +16,7 @@ def pytest_addoption(parser):
     parser.addoption("--url", default="https://demo.opencart.com/")
     parser.addoption("--log_level", default="INFO", choices=["DEBUG", "INFO"])
     parser.addoption("--executor", action="store", default="0.0.0.0",
-                     choices=["local", "127.0.0.1", "0.0.0.0"])  # указываем хост для удаленного запуска
+                     choices=["local", "127.0.0.1", "192.168.1.123"])  # указываем хост для удаленного запуска
     parser.addoption("--vnc", action="store_true", default=False)
     parser.addoption("--logs", action="store_true", default=False)
     parser.addoption("--videos", action="store_true", default=False)
@@ -78,11 +78,11 @@ def browser(request):
 
     def final():
         driver.quit()
-        with open('allure-results/environment.properties', 'w') as f:
-            f.write(f'Browser={browser}\n')
+        with open('../allure-results/environment.properties', 'w') as f:  # путь указывать отнсительно файла теста
+            f.write(f'Browser={_browser}\n')
             f.write(f'Browser.Version={version}\n')
             f.write(f'Executor={executor}')
+
     request.addfinalizer(final)
 
     return driver  # return ставим после финалайзера, иначе финалайзер не выполнится
-

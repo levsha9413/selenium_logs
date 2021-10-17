@@ -1,41 +1,11 @@
 [ {
-  "uid" : "7195f48649c68d26",
+  "uid" : "eab3d36f4a4eb47d",
   "name" : "test_add_new_product",
   "time" : {
-    "start" : 1634364826881,
-    "stop" : 1634364870103,
-    "duration" : 43222
+    "start" : 1634496504687,
+    "stop" : 1634496519124,
+    "duration" : 14437
   },
   "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ccb7eb11798a0cc1",
-  "name" : "test_switching_currency",
-  "time" : {
-    "start" : 1634364826897,
-    "stop" : 1634364859639,
-    "duration" : 32742
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2c87b5f3483992be",
-  "name" : "test_new_customer_registration",
-  "time" : {
-    "start" : 1634364826990,
-    "stop" : 1634364863441,
-    "duration" : 36451
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "90f9f598d15057b5",
-  "name" : "test_delete_product",
-  "time" : {
-    "start" : 1634364826913,
-    "stop" : 1634364858045,
-    "duration" : 31132
-  },
-  "status" : "failed",
   "severity" : "normal"
 } ]

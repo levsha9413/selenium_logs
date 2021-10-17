@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "values" : [ "chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "93.0" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "192.168.1.123" ],
+  "name" : "Executor"
+} ]
