@@ -4,22 +4,78 @@
   "children" : [ {
     "name" : "pbochkarev-workmashine",
     "children" : [ {
-      "name" : "30790-MainThread",
+      "name" : "95172-MainThread",
       "children" : [ {
+        "name" : "test_new_customer_registration",
+        "uid" : "a99e9900222e65f1",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634586185184,
+          "stop" : 1634586198934,
+          "duration" : 13750
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "test_add_new_product",
-        "uid" : "eab3d36f4a4eb47d",
-        "parentUid" : "3b1a08101507a8c53a80a4864bea1804",
+        "uid" : "31b6333a105a39f6",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
         "status" : "passed",
         "time" : {
-          "start" : 1634496504687,
-          "stop" : 1634496519124,
-          "duration" : 14437
+          "start" : 1634586160210,
+          "stop" : 1634586173769,
+          "duration" : 13559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_product",
+        "uid" : "76c427f30063c3b1",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634586173787,
+          "stop" : 1634586185120,
+          "duration" : 11333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_switching_currency",
+        "uid" : "aea024ac5e8f0efa",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634586198968,
+          "stop" : 1634586208148,
+          "duration" : 9180
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3b1a08101507a8c53a80a4864bea1804"
+      "uid" : "f1ba902aaabf64b49db9ba8665cd7118"
+    }, {
+      "name" : "91332-MainThread",
+      "children" : [ {
+        "name" : "test_add_new_product",
+        "uid" : "a382c85a6ede7c83",
+        "parentUid" : "250755c76a3fd3076d228911bb97ca63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634582542042,
+          "stop" : 1634582555555,
+          "duration" : 13513
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "250755c76a3fd3076d228911bb97ca63"
     } ],
     "uid" : "bfa9c9de9e846d2af143296292c3356a"
   } ]

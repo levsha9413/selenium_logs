@@ -39,6 +39,7 @@ def url(request):
 
 @pytest.fixture(scope="session")
 def browser(request):
+    print("Init web driver fixture") # для вывода в отчет
     _browser = request.config.getoption("--browser")  # _ добавляем для отличия от имени фикстуры
     headless = request.config.getoption("--headless")
     maximized = request.config.getoption("--maximized")
@@ -77,6 +78,7 @@ def browser(request):
             driver.maximize_window()
 
     def final():
+        print("Clean up web driver fixture")  # для вывода в отчет
         driver.quit()
         with open('../allure-results/environment.properties', 'w') as f:  # путь указывать отнсительно файла теста
             f.write(f'Browser={_browser}\n')

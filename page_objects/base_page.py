@@ -4,6 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
 import logging
+import allure
 
 
 class BasePage:
@@ -16,6 +17,7 @@ class BasePage:
         try:
             element = WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((locator, selector)))
         except TimeoutException:
+            self.attach_screenshot_to_report()
             raise AssertionError("Не найден элемент с селектором: {}".format(selector))
         return element
 
@@ -26,8 +28,10 @@ class BasePage:
             element = WebDriverWait(self.browser, timeout).until(EC.element_to_be_clickable((locator, selector)))
             element = WebDriverWait(self.browser, timeout).until(EC._element_if_visible(element))
         except TimeoutException:
+            self.attach_screenshot_to_report()
             raise AssertionError("Не найден элемент с селектором: {}".format(selector))
         except ElementNotInteractableException:
+            self.attach_screenshot_to_report()
             raise AssertionError("Не смог взаимодействовать с элементом с селектором: {}".format(selector))
         return element
 
@@ -55,3 +59,8 @@ class BasePage:
         elem = self.find_element_with_wait(locator, selector)
         select = Select(elem)
         return select
+
+    def attach_screenshot_to_report(self):
+        allure.attach(name=self.browser.session_id,
+                      body=self.browser.get_screenshot_as_png(),
+                      attachment_type=allure.attachment_type.PNG)

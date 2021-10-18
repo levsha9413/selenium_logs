@@ -1,24 +1,24 @@
 {
-  "uid" : "eab3d36f4a4eb47d",
-  "name" : "test_add_new_product",
-  "fullName" : "tests.test_opencart#test_add_new_product",
-  "historyId" : "b55c021cdeafe72ecf7a79f0791093ee",
+  "uid" : "aea024ac5e8f0efa",
+  "name" : "test_switching_currency",
+  "fullName" : "tests.test_opencart#test_switching_currency",
+  "historyId" : "f09c90ac5093d373aa7c4e4bc3490e00",
   "time" : {
-    "start" : 1634496504687,
-    "stop" : 1634496519124,
-    "duration" : 14437
+    "start" : 1634586198968,
+    "stop" : 1634586208148,
+    "duration" : 9180
   },
-  "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
-  "descriptionHtml" : "<pre><code>Добавление нового товара в разделе администратора.\n</code></pre>\n",
+  "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
+  "descriptionHtml" : "<pre><code>Переключение валют из верхнего меню опенкарта.\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1634496503078,
-      "stop" : 1634496504683,
-      "duration" : 1605
+      "start" : 1634586158597,
+      "stop" : 1634586160208,
+      "duration" : 1611
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,9 +31,9 @@
   }, {
     "name" : "url",
     "time" : {
-      "start" : 1634496504683,
-      "stop" : 1634496504684,
-      "duration" : 1
+      "start" : 1634586198967,
+      "stop" : 1634586198967,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -45,28 +45,34 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
+    "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "c9ab06b7e003dc04",
+      "uid" : "e332f1ceba39d7a0",
       "name" : "log",
-      "source" : "c9ab06b7e003dc04.txt",
+      "source" : "e332f1ceba39d7a0.txt",
       "type" : "text/plain",
-      "size" : 1959
+      "size" : 733
+    }, {
+      "uid" : "dbdf7468e72f83ce",
+      "name" : "stdout",
+      "source" : "dbdf7468e72f83ce.txt",
+      "type" : "text/plain",
+      "size" : 28
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "attachmentsCount" : 1,
+    "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::final",
     "time" : {
-      "start" : 1634496519128,
-      "stop" : 1634496519194,
-      "duration" : 66
+      "start" : 1634586208151,
+      "stop" : 1634586208215,
+      "duration" : 64
     },
     "status" : "passed",
     "steps" : [ ],
@@ -88,7 +94,7 @@
     "value" : "pbochkarev-workmashine"
   }, {
     "name" : "thread",
-    "value" : "30790-MainThread"
+    "value" : "95172-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -116,6 +122,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "eab3d36f4a4eb47d.json",
+  "source" : "aea024ac5e8f0efa.json",
   "parameterValues" : [ ]
 }

@@ -1,10 +1,40 @@
 [ {
-  "uid" : "eab3d36f4a4eb47d",
+  "uid" : "a99e9900222e65f1",
+  "name" : "test_new_customer_registration",
+  "time" : {
+    "start" : 1634586185184,
+    "stop" : 1634586198934,
+    "duration" : 13750
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "aea024ac5e8f0efa",
+  "name" : "test_switching_currency",
+  "time" : {
+    "start" : 1634586198968,
+    "stop" : 1634586208148,
+    "duration" : 9180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76c427f30063c3b1",
+  "name" : "test_delete_product",
+  "time" : {
+    "start" : 1634586173787,
+    "stop" : 1634586185120,
+    "duration" : 11333
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "31b6333a105a39f6",
   "name" : "test_add_new_product",
   "time" : {
-    "start" : 1634496504687,
-    "stop" : 1634496519124,
-    "duration" : 14437
+    "start" : 1634586160210,
+    "stop" : 1634586173769,
+    "duration" : 13559
   },
   "status" : "passed",
   "severity" : "normal"

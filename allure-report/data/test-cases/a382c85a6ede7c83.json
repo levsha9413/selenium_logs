@@ -1,0 +1,121 @@
+{
+  "uid" : "a382c85a6ede7c83",
+  "name" : "test_add_new_product",
+  "fullName" : "tests.test_opencart#test_add_new_product",
+  "historyId" : "b55c021cdeafe72ecf7a79f0791093ee",
+  "time" : {
+    "start" : 1634582542042,
+    "stop" : 1634582555555,
+    "duration" : 13513
+  },
+  "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
+  "descriptionHtml" : "<pre><code>Добавление нового товара в разделе администратора.\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1634582540355,
+      "stop" : 1634582542036,
+      "duration" : 1681
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "url",
+    "time" : {
+      "start" : 1634582542037,
+      "stop" : 1634582542037,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2871e54ea9067fe4",
+      "name" : "log",
+      "source" : "2871e54ea9067fe4.txt",
+      "type" : "text/plain",
+      "size" : 1959
+    }, {
+      "uid" : "2dea63a3f85e4f3f",
+      "name" : "stdout",
+      "source" : "2dea63a3f85e4f3f.txt",
+      "type" : "text/plain",
+      "size" : 52
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::final",
+    "time" : {
+      "start" : 1634582555559,
+      "stop" : 1634582555618,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_opencart"
+  }, {
+    "name" : "host",
+    "value" : "pbochkarev-workmashine"
+  }, {
+    "name" : "thread",
+    "value" : "91332-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_opencart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a382c85a6ede7c83.json",
+  "parameterValues" : [ ]
+}
