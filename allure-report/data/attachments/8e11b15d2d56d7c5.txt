@@ -1,2 +1,0 @@
-Init web driver fixture
-Clean up web driver fixture

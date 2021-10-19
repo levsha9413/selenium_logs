@@ -1,7 +1,0 @@
-INFO     HomePage:home_page.py:21 Перейти на домашнюю страницу: http://192.168.1.123:8081/
-INFO     UpperUserPanel:upper_user_panel.py:30 Переключить валюту на USD
-INFO     UpperUserPanel:upper_user_panel.py:37 Проверить, что текущая валюта USD
-INFO     UpperUserPanel:upper_user_panel.py:30 Переключить валюту на EURO
-INFO     UpperUserPanel:upper_user_panel.py:37 Проверить, что текущая валюта EURO
-INFO     UpperUserPanel:upper_user_panel.py:30 Переключить валюту на POUND_STERLING
-INFO     UpperUserPanel:upper_user_panel.py:37 Проверить, что текущая валюта POUND_STERLING
