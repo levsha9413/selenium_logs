@@ -1,12 +1,12 @@
 {
-  "uid" : "a382c85a6ede7c83",
+  "uid" : "9c4959f5518a4d20",
   "name" : "test_add_new_product",
   "fullName" : "tests.test_opencart#test_add_new_product",
   "historyId" : "b55c021cdeafe72ecf7a79f0791093ee",
   "time" : {
-    "start" : 1634582542042,
-    "stop" : 1634582555555,
-    "duration" : 13513
+    "start" : 1634586160210,
+    "stop" : 1634586173769,
+    "duration" : 13559
   },
   "description" : "\n    Добавление нового товара в разделе администратора.\n    ",
   "descriptionHtml" : "<pre><code>Добавление нового товара в разделе администратора.\n</code></pre>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1634582540355,
-      "stop" : 1634582542036,
-      "duration" : 1681
+      "start" : 1634586158597,
+      "stop" : 1634586160208,
+      "duration" : 1611
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +31,8 @@
   }, {
     "name" : "url",
     "time" : {
-      "start" : 1634582542037,
-      "stop" : 1634582542037,
+      "start" : 1634586160208,
+      "stop" : 1634586160208,
       "duration" : 0
     },
     "status" : "passed",
@@ -49,17 +49,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "2871e54ea9067fe4",
+      "uid" : "c8e376b7f5dbb9a0",
       "name" : "log",
-      "source" : "2871e54ea9067fe4.txt",
+      "source" : "c8e376b7f5dbb9a0.txt",
       "type" : "text/plain",
       "size" : 1959
     }, {
-      "uid" : "2dea63a3f85e4f3f",
+      "uid" : "4cff4f9984032e4",
       "name" : "stdout",
-      "source" : "2dea63a3f85e4f3f.txt",
+      "source" : "4cff4f9984032e4.txt",
       "type" : "text/plain",
-      "size" : 52
+      "size" : 24
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -70,9 +70,9 @@
   "afterStages" : [ {
     "name" : "browser::final",
     "time" : {
-      "start" : 1634582555559,
-      "stop" : 1634582555618,
-      "duration" : 59
+      "start" : 1634586208151,
+      "stop" : 1634586208215,
+      "duration" : 64
     },
     "status" : "passed",
     "steps" : [ ],
@@ -94,7 +94,7 @@
     "value" : "pbochkarev-workmashine"
   }, {
     "name" : "thread",
-    "value" : "91332-MainThread"
+    "value" : "95172-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -116,6 +116,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a382c85a6ede7c83.json",
+  "source" : "9c4959f5518a4d20.json",
   "parameterValues" : [ ]
 }

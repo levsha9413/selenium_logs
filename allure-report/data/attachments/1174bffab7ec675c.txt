@@ -1,0 +1,7 @@
+INFO     LoginPage:login_page.py:20 Перейти на страницу авторизации: http://192.168.1.123:8081//admin
+INFO     LoginPage:login_page.py:25 Ввести логин user
+INFO     LoginPage:login_page.py:30 Ввести пароль bitnami
+INFO     LoginPage:login_page.py:35 Авторизоваться
+INFO     NavigationPanel:navigation_panel.py:23 Открыть раздел меню CATALOG_SECTION
+INFO     NavigationPanel:navigation_panel.py:29 Открыть подраздел PRODUCTS_SUBSECTION
+INFO     ProductsPage:products_page.py:27 Поставить чекбокс у товара, в названии которого присутствует "Canon"

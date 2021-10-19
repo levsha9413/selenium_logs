@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from page_objects.base_page import BasePage
 import enum
+import allure
 
 
 class Sections(enum.Enum):
@@ -16,11 +17,14 @@ class Sections(enum.Enum):
 
 
 class NavigationPanel(BasePage):
+
+    @allure.step("Открыть раздел меню")
     def open_section(self, selector: Sections):
         self.logger.info(f"Открыть раздел меню {selector.name}")
         section_selector = selector.value
         self.click_button(*section_selector)
 
+    @allure.step("Открыть подраздел")
     def open_subsection(self, selector: Sections):
         self.logger.info(f"Открыть подраздел {selector.name}")
         section_selector = selector.value

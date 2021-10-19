@@ -8,12 +8,11 @@ from page_objects.browser_alert import BrowserAlert
 from page_objects.customer_section.elements.upper_user_panel import UpperUserPanel, Currencies
 from page_objects.customer_section.pages.home_page import HomePage
 from page_objects.customer_section.pages.register_page import RegisterPage
+import allure
 
 
+@allure.title("Добавление нового товара в разделе администратора")
 def test_add_new_product(browser, url):
-    '''
-    Добавление нового товара в разделе администратора.
-    '''
     login_page = LoginPage(browser)
     menu = NavigationPanel(browser)
     title_panel = TitlePanel(browser)
@@ -34,11 +33,8 @@ def test_add_new_product(browser, url):
     assert products_page.verification_product_by_name("Test product name"), "Созданный товар не найден"
 
 
-
+@allure.title("Удаление товара из списка в разделе администартора")
 def test_delete_product(browser, url):
-    '''
-    Удаление товара из списка в разделе администартора.
-    '''
     login_page = LoginPage(browser)
     menu = NavigationPanel(browser)
     browser_alert = BrowserAlert(browser)
@@ -54,10 +50,8 @@ def test_delete_product(browser, url):
     assert not(products_page.verification_product_by_name("Canon"))
 
 
+@allure.title("Регистрация нового пользователя в магазине опенкарта")
 def test_new_customer_registration(browser, url):
-    '''
-    Регистрация нового пользователя в магазине опенкарта.
-    '''
     page = HomePage(browser)
     panel = UpperUserPanel(browser)
     page.open_page(url)
@@ -69,10 +63,8 @@ def test_new_customer_registration(browser, url):
     register_page.check_successfully_created()
 
 
+@allure.title("Переключение валют из верхнего меню опенкарта")
 def test_switching_currency(browser, url):
-    '''
-    Переключение валют из верхнего меню опенкарта.
-    '''
     page = HomePage(browser)
     panel = UpperUserPanel(browser)
     page.open_page(url)

@@ -2,53 +2,53 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "test_add_new_product",
-    "uid" : "31b6333a105a39f6",
+    "name" : "Переключение валют из верхнего меню опенкарта",
+    "uid" : "c050aaea14fee468",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1634586160210,
-      "stop" : 1634586173769,
-      "duration" : 13559
+      "start" : 1634665521965,
+      "stop" : 1634665532336,
+      "duration" : 10371
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "test_delete_product",
-    "uid" : "76c427f30063c3b1",
+    "name" : "Удаление товара из списка в разделе администартора",
+    "uid" : "22d8708f5bea3d30",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1634586173787,
-      "stop" : 1634586185120,
-      "duration" : 11333
+      "start" : 1634665522792,
+      "stop" : 1634665536805,
+      "duration" : 14013
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "test_new_customer_registration",
-    "uid" : "a99e9900222e65f1",
+    "name" : "Регистрация нового пользователя в магазине опенкарта",
+    "uid" : "51c4abe0651c3176",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1634586185184,
-      "stop" : 1634586198934,
-      "duration" : 13750
+      "start" : 1634665522876,
+      "stop" : 1634665539543,
+      "duration" : 16667
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "test_switching_currency",
-    "uid" : "aea024ac5e8f0efa",
+    "name" : "Добавление нового товара в разделе администратора",
+    "uid" : "6d8f0fb6f91f2cd",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1634586198968,
-      "stop" : 1634586208148,
-      "duration" : 9180
+      "start" : 1634665522915,
+      "stop" : 1634665539681,
+      "duration" : 16766
     },
     "flaky" : false,
     "newFailed" : false,

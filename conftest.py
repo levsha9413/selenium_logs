@@ -22,15 +22,6 @@ def pytest_addoption(parser):
     parser.addoption("--videos", action="store_true", default=False)
 
 
-@pytest.fixture  # выпилить если не смогу пробросить
-def log_level(request):
-    level = request.config.getoption("--log_level")
-    if level == "INFO":
-        return logging.INFO
-    elif level == "DEBUG":
-        return logging.DEBUG
-
-
 @pytest.fixture  # делаем для url отдельную фикстуру, чтобы передавать как отдельный аргумент
 def url(request):
     url = request.config.getoption("--url")
@@ -39,7 +30,7 @@ def url(request):
 
 @pytest.fixture(scope="session")
 def browser(request):
-    print("Init web driver fixture") # для вывода в отчет
+    print("Init web driver fixture")  # для вывода в отчет
     _browser = request.config.getoption("--browser")  # _ добавляем для отличия от имени фикстуры
     headless = request.config.getoption("--headless")
     maximized = request.config.getoption("--maximized")

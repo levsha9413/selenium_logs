@@ -1,5 +1,5 @@
 {
-  "uid" : "76c427f30063c3b1",
+  "uid" : "2eeb764595c88335",
   "name" : "test_delete_product",
   "fullName" : "tests.test_opencart#test_delete_product",
   "historyId" : "47fa9a9d0b0287c16f0d3398478561c6",
@@ -53,15 +53,15 @@
     "statusTrace" : "self = <page_objects.admin_section.sections.catalog.products.products_page.ProductsPage object at 0x7f53c86eae80>\nlocator = 'xpath'\nselector = '//tbody/tr[./td[contains(text(), \"Canon\")]]//input', timeout = 5\n\n    def find_element_with_wait(self, locator, selector, timeout=5):\n        self.logger.debug(f\"Поиск элемента '{selector}'\")\n        try:\n>           element = WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((locator, selector)))\n\n../page_objects/base_page.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"d342c9f717e2e11f8835ef3c85351631\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x7f53c86eafd0>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py:80: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nbrowser = <selenium.webdriver.remote.webdriver.WebDriver (session=\"d342c9f717e2e11f8835ef3c85351631\")>\nurl = 'http://192.168.1.123:8081/'\n\n    def test_delete_product(browser, url):\n        '''\n        Удаление товара из списка в разделе администартора.\n        '''\n        login_page = LoginPage(browser)\n        menu = NavigationPanel(browser)\n        browser_alert = BrowserAlert(browser)\n        title_panel = TitlePanel(browser)\n        login_page.open_page(url)\n        login_page.sign_in(\"user\", \"bitnami\")\n        menu.open_section(Sections.CATALOG_SECTION)\n        menu.open_subsection(Sections.PRODUCTS_SUBSECTION)\n        products_page = ProductsPage(browser)\n>       products_page.checkbox_click(\"Canon\")\n\ntest_opencart.py:51: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../page_objects/admin_section/sections/catalog/products/products_page.py:30: in checkbox_click\n    self.click_button(*product_checkbox)\n../page_objects/base_page.py:46: in click_button\n    button = self.find_element_with_wait(locator, selector)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <page_objects.admin_section.sections.catalog.products.products_page.ProductsPage object at 0x7f53c86eae80>\nlocator = 'xpath'\nselector = '//tbody/tr[./td[contains(text(), \"Canon\")]]//input', timeout = 5\n\n    def find_element_with_wait(self, locator, selector, timeout=5):\n        self.logger.debug(f\"Поиск элемента '{selector}'\")\n        try:\n            element = WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((locator, selector)))\n        except TimeoutException:\n            self.attach_screenshot_to_report()\n>           raise AssertionError(\"Не найден элемент с селектором: {}\".format(selector))\nE           AssertionError: Не найден элемент с селектором: //tbody/tr[./td[contains(text(), \"Canon\")]]//input\n\n../page_objects/base_page.py:21: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "3fbbe5879a1330a0",
+      "uid" : "7a297805a4517874",
       "name" : "d342c9f717e2e11f8835ef3c85351631",
-      "source" : "3fbbe5879a1330a0.png",
+      "source" : "7a297805a4517874.png",
       "type" : "image/png",
       "size" : 174237
     }, {
-      "uid" : "fdf420b18b539bfe",
+      "uid" : "53c7d45737bc6241",
       "name" : "log",
-      "source" : "fdf420b18b539bfe.txt",
+      "source" : "53c7d45737bc6241.txt",
       "type" : "text/plain",
       "size" : 695
     } ],
@@ -114,18 +114,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ "failed" ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "76c427f30063c3b1.json",
+  "source" : "2eeb764595c88335.json",
   "parameterValues" : [ ]
 }

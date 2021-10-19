@@ -1,24 +1,22 @@
 {
-  "uid" : "aea024ac5e8f0efa",
-  "name" : "test_switching_currency",
-  "fullName" : "tests.test_opencart#test_switching_currency",
-  "historyId" : "f09c90ac5093d373aa7c4e4bc3490e00",
+  "uid" : "7d855cdfd278bb15",
+  "name" : "Добавление нового товара в разделе администратора.",
+  "fullName" : "tests.test_opencart#test_add_new_product",
+  "historyId" : "b55c021cdeafe72ecf7a79f0791093ee",
   "time" : {
-    "start" : 1634586198968,
-    "stop" : 1634586208148,
-    "duration" : 9180
+    "start" : 1634663105860,
+    "stop" : 1634663120065,
+    "duration" : 14205
   },
-  "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
-  "descriptionHtml" : "<pre><code>Переключение валют из верхнего меню опенкарта.\n</code></pre>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1634586158597,
-      "stop" : 1634586160208,
-      "duration" : 1611
+      "start" : 1634663092539,
+      "stop" : 1634663105857,
+      "duration" : 13318
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +29,8 @@
   }, {
     "name" : "url",
     "time" : {
-      "start" : 1634586198967,
-      "stop" : 1634586198967,
+      "start" : 1634663105858,
+      "stop" : 1634663105858,
       "duration" : 0
     },
     "status" : "passed",
@@ -45,21 +43,20 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "\n    Переключение валют из верхнего меню опенкарта.\n    ",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "e332f1ceba39d7a0",
+      "uid" : "278aef2c6d19da9d",
       "name" : "log",
-      "source" : "e332f1ceba39d7a0.txt",
+      "source" : "278aef2c6d19da9d.txt",
       "type" : "text/plain",
-      "size" : 733
+      "size" : 3207
     }, {
-      "uid" : "dbdf7468e72f83ce",
+      "uid" : "6bbb7c4fca1c2612",
       "name" : "stdout",
-      "source" : "dbdf7468e72f83ce.txt",
+      "source" : "6bbb7c4fca1c2612.txt",
       "type" : "text/plain",
-      "size" : 28
+      "size" : 52
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -70,9 +67,9 @@
   "afterStages" : [ {
     "name" : "browser::final",
     "time" : {
-      "start" : 1634586208151,
-      "stop" : 1634586208215,
-      "duration" : 64
+      "start" : 1634663120073,
+      "stop" : 1634663120135,
+      "duration" : 62
     },
     "status" : "passed",
     "steps" : [ ],
@@ -94,7 +91,7 @@
     "value" : "pbochkarev-workmashine"
   }, {
     "name" : "thread",
-    "value" : "95172-MainThread"
+    "value" : "149105-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -110,18 +107,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ {
-      "name" : "Passed tests",
-      "matchedStatuses" : [ "passed" ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "aea024ac5e8f0efa.json",
+  "source" : "7d855cdfd278bb15.json",
   "parameterValues" : [ ]
 }
