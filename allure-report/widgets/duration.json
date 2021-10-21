@@ -1,0 +1,41 @@
+[ {
+  "uid" : "c050aaea14fee468",
+  "name" : "Переключение валют из верхнего меню опенкарта",
+  "time" : {
+    "start" : 1634665521965,
+    "stop" : 1634665532336,
+    "duration" : 10371
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22d8708f5bea3d30",
+  "name" : "Удаление товара из списка в разделе администартора",
+  "time" : {
+    "start" : 1634665522792,
+    "stop" : 1634665536805,
+    "duration" : 14013
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d8f0fb6f91f2cd",
+  "name" : "Добавление нового товара в разделе администратора",
+  "time" : {
+    "start" : 1634665522915,
+    "stop" : 1634665539681,
+    "duration" : 16766
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51c4abe0651c3176",
+  "name" : "Регистрация нового пользователя в магазине опенкарта",
+  "time" : {
+    "start" : 1634665522876,
+    "stop" : 1634665539543,
+    "duration" : 16667
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

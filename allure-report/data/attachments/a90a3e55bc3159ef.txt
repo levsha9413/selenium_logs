@@ -1,0 +1,12 @@
+INFO     HomePage:home_page.py:21 Перейти на домашнюю страницу: http://192.168.1.123:8081/
+INFO     UpperUserPanel:upper_user_panel.py:74 Перейти к регистрации
+INFO     UpperUserPanel:upper_user_panel.py:54 Перейти к профилю покупателя
+INFO     RegisterPage:register_page.py:22 Ввести имя - Joe
+INFO     RegisterPage:register_page.py:27 Ввести фамилию - Smith
+INFO     RegisterPage:register_page.py:32 Ввести email - ed.d.xample@mail.com
+INFO     RegisterPage:register_page.py:37 Ввести телефон - +12121234567
+INFO     RegisterPage:register_page.py:42 Ввести пароль - ghf54fdgLL
+INFO     RegisterPage:register_page.py:47 Подтвердить пароль - ghf54fdgLL
+INFO     RegisterPage:register_page.py:60 Принять политику конфиденциальности
+INFO     RegisterPage:register_page.py:65 Продолжить
+INFO     RegisterPage:register_page.py:81 Проверка успешного окончания регистрации

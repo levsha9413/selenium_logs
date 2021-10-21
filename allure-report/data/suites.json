@@ -1,0 +1,65 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_opencart",
+      "children" : [ {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "c050aaea14fee468",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665521965,
+          "stop" : 1634665532336,
+          "duration" : 10371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "22d8708f5bea3d30",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522792,
+          "stop" : 1634665536805,
+          "duration" : 14013
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "51c4abe0651c3176",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522876,
+          "stop" : 1634665539543,
+          "duration" : 16667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "6d8f0fb6f91f2cd",
+        "parentUid" : "3f14be6a6783e3d9195b898453a871fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665522915,
+          "stop" : 1634665539681,
+          "duration" : 16766
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f14be6a6783e3d9195b898453a871fb"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ]
+}

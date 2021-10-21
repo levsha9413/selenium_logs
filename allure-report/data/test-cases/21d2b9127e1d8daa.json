@@ -1,0 +1,118 @@
+{
+  "uid" : "21d2b9127e1d8daa",
+  "name" : "Переключение валют из верхнего меню опенкарта",
+  "fullName" : "tests.test_opencart#test_switching_currency",
+  "historyId" : "f09c90ac5093d373aa7c4e4bc3490e00",
+  "time" : {
+    "start" : 1634663492500,
+    "stop" : 1634663501641,
+    "duration" : 9141
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1634663452623,
+      "stop" : 1634663454240,
+      "duration" : 1617
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "url",
+    "time" : {
+      "start" : 1634663492499,
+      "stop" : 1634663492499,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4328a93d43028fe7",
+      "name" : "log",
+      "source" : "4328a93d43028fe7.txt",
+      "type" : "text/plain",
+      "size" : 733
+    }, {
+      "uid" : "7f95660175a44cb1",
+      "name" : "stdout",
+      "source" : "7f95660175a44cb1.txt",
+      "type" : "text/plain",
+      "size" : 28
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::final",
+    "time" : {
+      "start" : 1634663501644,
+      "stop" : 1634663501707,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_opencart"
+  }, {
+    "name" : "host",
+    "value" : "pbochkarev-workmashine"
+  }, {
+    "name" : "thread",
+    "value" : "149812-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_opencart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21d2b9127e1d8daa.json",
+  "parameterValues" : [ ]
+}

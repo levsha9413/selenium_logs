@@ -1,0 +1,76 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Passed tests",
+    "children" : [ {
+      "children" : [ {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "c050aaea14fee468",
+        "parentUid" : "a15971e48ddfd2dfbfc5062500b234d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665521965,
+          "stop" : 1634665532336,
+          "duration" : 10371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "6d8f0fb6f91f2cd",
+        "parentUid" : "a15971e48ddfd2dfbfc5062500b234d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665522915,
+          "stop" : 1634665539681,
+          "duration" : 16766
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a15971e48ddfd2dfbfc5062500b234d9"
+    } ],
+    "uid" : "dd8992aead2124d0571b6a4556de1945"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Не найден элемент с селектором: //tbody/tr[./td[contains(text(), \"Canon\")]]//input",
+      "children" : [ {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "22d8708f5bea3d30",
+        "parentUid" : "a306544479f268009ecf4ea354f8eccc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522792,
+          "stop" : 1634665536805,
+          "duration" : 14013
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a306544479f268009ecf4ea354f8eccc"
+    }, {
+      "name" : "AssertionError: Не найден элемент с селектором: //h1[text()=\"Your Account Has Been Created!\"]",
+      "children" : [ {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "51c4abe0651c3176",
+        "parentUid" : "57404f188bd31dbbe71dd15f1fa62975",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522876,
+          "stop" : 1634665539543,
+          "duration" : 16667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57404f188bd31dbbe71dd15f1fa62975"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

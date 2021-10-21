@@ -1,0 +1,80 @@
+{
+  "47fa9a9d0b0287c16f0d3398478561c6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "22d8708f5bea3d30",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Не найден элемент с селектором: //tbody/tr[./td[contains(text(), \"Canon\")]]//input",
+      "time" : {
+        "start" : 1634665522792,
+        "stop" : 1634665536805,
+        "duration" : 14013
+      }
+    } ]
+  },
+  "f09c90ac5093d373aa7c4e4bc3490e00" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c050aaea14fee468",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634665521965,
+        "stop" : 1634665532336,
+        "duration" : 10371
+      }
+    } ]
+  },
+  "b55c021cdeafe72ecf7a79f0791093ee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d8f0fb6f91f2cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634665522915,
+        "stop" : 1634665539681,
+        "duration" : 16766
+      }
+    } ]
+  },
+  "b8a7455e7804c3784059a2b6029c24ce" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51c4abe0651c3176",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Не найден элемент с селектором: //h1[text()=\"Your Account Has Been Created!\"]",
+      "time" : {
+        "start" : 1634665522876,
+        "stop" : 1634665539543,
+        "duration" : 16667
+      }
+    } ]
+  }
+}

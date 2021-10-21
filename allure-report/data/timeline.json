@@ -1,0 +1,335 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "pbochkarev-workmashine",
+    "children" : [ {
+      "name" : "150513-MainThread",
+      "children" : [ {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "a8b9f69417c026aa",
+        "parentUid" : "3ee8bb970845c6df38ebe615d2d36a9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634663854986,
+          "stop" : 1634663868484,
+          "duration" : 13498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "506ef707d6156fc6",
+        "parentUid" : "3ee8bb970845c6df38ebe615d2d36a9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634663879602,
+          "stop" : 1634663892968,
+          "duration" : 13366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "6ec7bf983979fcc1",
+        "parentUid" : "3ee8bb970845c6df38ebe615d2d36a9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634663893000,
+          "stop" : 1634663902224,
+          "duration" : 9224
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "277bae0caaec974f",
+        "parentUid" : "3ee8bb970845c6df38ebe615d2d36a9b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634663868490,
+          "stop" : 1634663879538,
+          "duration" : 11048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ee8bb970845c6df38ebe615d2d36a9b"
+    }, {
+      "name" : "153190-MainThread",
+      "children" : [ {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "764c4bfc2c26aa1f",
+        "parentUid" : "5b3d2077c60db563ac7723c78bb002fd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665480847,
+          "stop" : 1634665491925,
+          "duration" : 11078
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "d0a65a9ea9d5ba53",
+        "parentUid" : "5b3d2077c60db563ac7723c78bb002fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665467339,
+          "stop" : 1634665480835,
+          "duration" : 13496
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "f7e6ce158c9cfec",
+        "parentUid" : "5b3d2077c60db563ac7723c78bb002fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665505422,
+          "stop" : 1634665514664,
+          "duration" : 9242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "69c71940c0caf126",
+        "parentUid" : "5b3d2077c60db563ac7723c78bb002fd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665491982,
+          "stop" : 1634665505393,
+          "duration" : 13411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b3d2077c60db563ac7723c78bb002fd"
+    }, {
+      "name" : "95172-MainThread",
+      "children" : [ {
+        "name" : "test_switching_currency",
+        "uid" : "6824e57cf928f59",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634586198968,
+          "stop" : 1634586208148,
+          "duration" : 9180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_new_product",
+        "uid" : "9c4959f5518a4d20",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634586160210,
+          "stop" : 1634586173769,
+          "duration" : 13559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_product",
+        "uid" : "2eeb764595c88335",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634586173787,
+          "stop" : 1634586185120,
+          "duration" : 11333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_customer_registration",
+        "uid" : "170ef76f68023407",
+        "parentUid" : "f1ba902aaabf64b49db9ba8665cd7118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634586185184,
+          "stop" : 1634586198934,
+          "duration" : 13750
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f1ba902aaabf64b49db9ba8665cd7118"
+    }, {
+      "name" : "91332-MainThread",
+      "children" : [ {
+        "name" : "test_add_new_product",
+        "uid" : "f46d00c3449e0d90",
+        "parentUid" : "250755c76a3fd3076d228911bb97ca63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634582542042,
+          "stop" : 1634582555555,
+          "duration" : 13513
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "250755c76a3fd3076d228911bb97ca63"
+    }, {
+      "name" : "153259-MainThread",
+      "children" : [ {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "6d8f0fb6f91f2cd",
+        "parentUid" : "a21d8fb23bca3e0543dbfb8cf3e3e0e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665522915,
+          "stop" : 1634665539681,
+          "duration" : 16766
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a21d8fb23bca3e0543dbfb8cf3e3e0e8"
+    }, {
+      "name" : "149812-MainThread",
+      "children" : [ {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "21d2b9127e1d8daa",
+        "parentUid" : "fef95d67e1300856397d006cc34bf74a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634663492500,
+          "stop" : 1634663501641,
+          "duration" : 9141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "8823785265e81d31",
+        "parentUid" : "fef95d67e1300856397d006cc34bf74a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634663479159,
+          "stop" : 1634663492464,
+          "duration" : 13305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "c7be487544d94115",
+        "parentUid" : "fef95d67e1300856397d006cc34bf74a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634663467999,
+          "stop" : 1634663479096,
+          "duration" : 11097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление нового товара в разделе администратора",
+        "uid" : "5700edc261858e70",
+        "parentUid" : "fef95d67e1300856397d006cc34bf74a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634663454247,
+          "stop" : 1634663467983,
+          "duration" : 13736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fef95d67e1300856397d006cc34bf74a"
+    }, {
+      "name" : "149105-MainThread",
+      "children" : [ {
+        "name" : "Добавление нового товара в разделе администратора.",
+        "uid" : "7d855cdfd278bb15",
+        "parentUid" : "8cffc3b6c35f074d39f1db08f30650cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634663105860,
+          "stop" : 1634663120065,
+          "duration" : 14205
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8cffc3b6c35f074d39f1db08f30650cc"
+    }, {
+      "name" : "153262-MainThread",
+      "children" : [ {
+        "name" : "Удаление товара из списка в разделе администартора",
+        "uid" : "22d8708f5bea3d30",
+        "parentUid" : "dedfc5ee878025be046a4e07a4e970a9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522792,
+          "stop" : 1634665536805,
+          "duration" : 14013
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dedfc5ee878025be046a4e07a4e970a9"
+    }, {
+      "name" : "153266-MainThread",
+      "children" : [ {
+        "name" : "Регистрация нового пользователя в магазине опенкарта",
+        "uid" : "51c4abe0651c3176",
+        "parentUid" : "db6f8604268efcf549000f72ab3b6578",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634665522876,
+          "stop" : 1634665539543,
+          "duration" : 16667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "db6f8604268efcf549000f72ab3b6578"
+    }, {
+      "name" : "153270-MainThread",
+      "children" : [ {
+        "name" : "Переключение валют из верхнего меню опенкарта",
+        "uid" : "c050aaea14fee468",
+        "parentUid" : "b6572c5e3136be0a67ed788fd665daac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634665521965,
+          "stop" : 1634665532336,
+          "duration" : 10371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6572c5e3136be0a67ed788fd665daac"
+    } ],
+    "uid" : "bfa9c9de9e846d2af143296292c3356a"
+  } ]
+}
