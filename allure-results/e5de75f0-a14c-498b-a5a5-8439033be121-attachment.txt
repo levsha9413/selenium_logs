@@ -1,0 +1,19 @@
+INFO     LoginPage:login_page.py:18 Перейти на страницу авторизации: http://10.51.33.220:8081/admin
+INFO     LoginPage:login_page.py:23 Ввести логин user
+INFO     LoginPage:login_page.py:28 Ввести пароль bitnami
+INFO     LoginPage:login_page.py:33 Авторизоваться
+INFO     NavigationPanel:navigation_panel.py:23 Открыть раздел меню CATALOG_SECTION
+INFO     NavigationPanel:navigation_panel.py:29 Открыть подраздел PRODUCTS_SUBSECTION
+INFO     TitlePanel:title_panel.py:21 Нажать на кнопку "Добавить"
+INFO     AddProductPageGeneral:add_product_page.py:23 Ввести имя продукта - "Test product name"
+INFO     AddProductPageGeneral:add_product_page.py:28 Ввести описание продукта - "Test description 123!@#$%^"
+INFO     AddProductPageGeneral:add_product_page.py:33 Ввести тег заголовка - "Test_meta_teg"
+INFO     AddProductPageGeneral:add_product_page.py:38 Ввести мета тег - "Test meta teg descriptions"
+INFO     AddProductPageGeneral:add_product_page.py:43 Ввести ключевые слова - "Test keywords"
+INFO     AddProductPageGeneral:add_product_page.py:48 Ввести тег - "Test product tag"
+INFO     AddProductPageData:add_product_page.py:69 Переключиться на вкладку "Data"
+INFO     AddProductPageData:add_product_page.py:74 Ввести модель - Test model
+INFO     TitlePanel:title_panel.py:31 Нажать на кнопку "Сохранить"
+INFO     ProductsPage:products_page.py:37 Заполнить фильтр по имени значением "Test"
+INFO     ProductsPage:products_page.py:64 Применить фильтры
+INFO     ProductsPage:products_page.py:28 Проверить существование товара, в названии которого присутствует 'Test product name'

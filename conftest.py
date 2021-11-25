@@ -3,9 +3,9 @@ from selenium import webdriver
 import os
 import logging
 
-DRIVERS = os.path.expanduser("~/qa/drivers")
-logging.basicConfig(format='%(asctime)s [%(levelname)s] %(name)s: %(message)s', level=logging.DEBUG,
-                    filename="../logs/selenium.log")
+DRIVERS = os.path.expanduser("~/sources/")
+# logging.basicConfig(format='%(asctime)s [%(levelname)s] %(name)s: %(message)s', level=logging.DEBUG,
+#                     filename="../logs/selenium.log")
 
 
 def pytest_addoption(parser):
@@ -16,7 +16,7 @@ def pytest_addoption(parser):
     parser.addoption("--url", default="https://demo.opencart.com/")
     parser.addoption("--log_level", default="INFO", choices=["DEBUG", "INFO"])
     parser.addoption("--executor", action="store", default="0.0.0.0",
-                     choices=["local", "127.0.0.1", "192.168.1.123"])  # указываем хост для удаленного запуска
+                     choices=["local", "127.0.0.1", "192.168.1.123", "10.51.244.99"])  # указываем хост для удаленного запуска
     parser.addoption("--vnc", action="store_true", default=False)
     parser.addoption("--logs", action="store_true", default=False)
     parser.addoption("--videos", action="store_true", default=False)
