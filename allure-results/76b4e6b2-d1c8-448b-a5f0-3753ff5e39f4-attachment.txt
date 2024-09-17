@@ -1,0 +1,1 @@
+INFO     LoginPage:login_page.py:18 Перейти на страницу авторизации: https://192.168.1.123:8081/admin
